@@ -1,5 +1,5 @@
 # Linux-Backup-script
-A tiny packup script for linux to pack folders into zip
+A simple packup tool for linux to pack folders into zip
 
 ## How to use
 1) Download backup.sh
