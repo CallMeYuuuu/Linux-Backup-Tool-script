@@ -16,7 +16,7 @@ fi
 if [ -d "${PASSED}" ]
 	then
 		zip -r "$(date +"%Y.%m.%d-%H:%M")_$1-backup.zip" $1
-		echo -e "${NC}[${LIGHT_BLUE}Backup Tool${NC}] ${LIGHT_GREEN}Backup of directory ${YELLOW}$1 ${LIGHT_GREEN}was successful.${NC}"
+		echo -e "${NC}[${LIGHT_BLUE}Backup Tool${NC}] ${LIGHT_GREEN}Backup of directory ${YELLOW}$1 ${LIGHT_GREEN}was successful. You can find it in ${YELLOW}${PWD}/BACKUP/$(date +"%Y.%m.%d-%H:%M")_$1-backup.zip${LIGHT_GREEN}.${NC}"
 		if [ -d "BACKUP" ]
 			then
 				mv "$(date +"%Y.%m.%d-%H:%M")_$1-backup.zip" "BACKUP"
